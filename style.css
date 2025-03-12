@@ -33,7 +33,7 @@ box-shadow: 10px 8px 7px hsl(0, 0%, 0%);
     color: rgb(255, 255, 255);
     background-color: hsl(0, 0%, 20%);
     box-sizing: border-box;
-    box-shadow: 4px 4px 8px  hsl(0, 0%, 0%);
+    box-shadow: 2px 2px 8px  hsl(0, 0%, 0%);
 }
 #equal {
     grid-column: span 2; 
@@ -60,7 +60,7 @@ button{
     background-color: hsl(0, 0%, 30%);
     color: rgb(255, 255, 255);
     font-size: 3rem;
-    box-shadow: 10px 8px 7px hsl(0, 0%, 0%);
+    box-shadow: 3px 3px 4px hsl(0, 0%, 0%);
     font-weight: bold;
     cursor: pointer;
 }
