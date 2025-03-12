@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 110vh;
+    background-color: hsl(0, 0%, 70%);
+    background-image: url(https://st2.depositphotos.com/4393299/7171/v/950/depositphotos_71718931-stock-illustration-doodle-calculator-seamless-pattern-background.jpg);
+}
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10; 
+    position: relative; 
+    top: 0; 
+    font-weight: bold;
+    box-shadow: 0px 3px 5px rgb(0, 0, 0);
+}
+#calculator{
+font-family: arial, sans-serif;
+background-color: hsl(0, 0%, 15%);
+border-radius: 15px;
+max-width: 500px;
+overflow: hidden;
+box-shadow: 10px 8px 7px hsl(0, 0%, 0%);
+}
+#result{
+    width: 100%;
+    padding-right: 10px;
+    font-size: 5rem;
+    text-align: right;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 20%);
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px  hsl(0, 0%, 0%);
+}
+#equal {
+    grid-column: span 2; 
+    background-color: orange; 
+    width: 100%;
+}
+#equal:hover{
+    background-color: hsl(39, 100%, 60%);
+}
+#equal:active{
+    background-color: hsl(39, 100%, 70%);
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width:100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    box-shadow: 10px 8px 7px hsl(0, 0%, 0%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: orange;
+}
+.operator-btn:hover{
+    background-color: hsl(39, 100%, 60%);
+}
+.operator-btn:active{
+    background-color: hsl(39, 100%, 70%);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        height: 100vh;
+        padding: 20px; 
+    }
+
+    #calculator {
+        max-width: 90%;
+        border-radius: 10px;
+    }
+
+    #result {
+        font-size: 3rem; 
+        padding-right: 5px; 
+    }
+
+    #keys {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 5px; 
+        padding: 15px;
+    }
+
+    button {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem; 
+        border-radius: 35px; 
+    }
+
+    #equal {
+        grid-column: span 2;
+        height: 70px; 
+    }
+}
+
+@media (max-width: 400px) {
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem; 
+        border-radius: 30px;
+    }
+
+    #result {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <div id="calculator">
+        <input id="result" type="text" class="form-control text" placeholder="0">
+        <!-- calculator button -->
+         <div id="keys">
+        <button id="add" class="operator-btn" onclick="appendTodisplay('+')">&#43;</button>
+        <button id="seven" onclick="appendTodisplay('7')">7</button>
+        <button id="eight" onclick="appendTodisplay('8')">8</button>
+        <button id="nine" onclick="appendTodisplay('9')">9</button>
+        <button id="sub" class="operator-btn" onclick="appendTodisplay('-')">&#8722;</button>
+        <button id="four" onclick="appendTodisplay('4')">4</button>
+        <button id="five" onclick="appendTodisplay('5')">5</button>
+        <button id="six" onclick="appendTodisplay('6')">6</button>
+        <button id="mul" class="operator-btn" onclick="appendTodisplay('*')">&#215;</button>
+        <button id="one" onclick="appendTodisplay('1')">1</button>
+        <button id="two" onclick="appendTodisplay('2')">2</button>
+        <button id="three" onclick="appendTodisplay('3')">3</button>
+        <button id="div" class="operator-btn" onclick="appendTodisplay('/')">&#247;</button>
+        <button id="doublezero" onclick="appendTodisplay('00')">00</button>
+        <button id="zero" onclick="appendTodisplay('0')">0</button>
+        <button id="deci" onclick="appendTodisplay('.')">.</button>
+        <button id="clear" class="operator-btn" onclick="clearDisplay()">AC</button>
+        <button id="del" class="operator-btn" onclick="removeLastitem()">del</button>
+        <button id="equal" class="operator-btn" onclick="calculate()">&#61;</button>
+    </div>
+    </div>
+
+   
+</body>
+<script src="./script.js"></script>
+</html>
